@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Montserrat:wght@300;500;700;900&family=Oswald:wght@200;400&display=swap');
+
+
+$font-family-base: 'Montserrat', sans-serif;
+$primary: #3cb4ab;
+$enable-negative-margins: true; // para poder poner margenes negativos y ahora para usarlo lo llevamos donde lo necesitemos como si fuera una clase normal, entonces pondremos en el main en las clases mt-n5
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// Aca cambiamos las caracteristicas del boton para que su fondo sea del mismo color del navbar y damos un borde
+.nav-form-control{
+    background-color: $primary;
+    border-color: $light;
+}
+
+header {
+    background-image: url('../img/Montanas.jpg');
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+@include media-breakpoint-up(md) {
+    header {   
+    height: 400px;
+    
+    }
+ }
+
